@@ -16,7 +16,7 @@ In a `BASH` shell with `git` and `python3` installed run the following `curl` co
 
 ## Step 2
 
-With `vamos` installed, choose a working directory for creation of a git repository folder `toy-samples` by invoking:
+With `vamos` installed, choose a convenient working directory for creation of a git repository folder `toy-samples` by invoking:
 
 ```
     $ vamos @jpmstart/toy-samples
