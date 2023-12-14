@@ -31,9 +31,9 @@ If the installation was successful you will get a message about the successful i
 Also note the character sequence `(venv)` as part of the command line prompt, which indicates, that the virtual environment of the playground is activated. If for any reason (e.g., open a new console/terminal window) `cd` to the playground's home folder (`toy-samples`) and invoke `$ . vamos` to re-activate the playground.
 
 
-## Explore the Playground
+## Exploring the Playground
 
-Ask for quick help by hitting the `?` command:
+Get quick help by hitting the `?` command:
 
 ```
     (venv) $ ?
