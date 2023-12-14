@@ -89,7 +89,7 @@ runs a two-phase `vamos` installation process. In phase 1 the following three st
 * and startup script ./.vamos/bin/startup is `sourced` (executed in current BASH environment)
 
 In phase 2 the specific startup script of 
-playground `toy-samples` is executed:
+playground `toy-samples` (located in `.vamos/bin/startup`) is executed:
 
 * create a `venv` folder representing a virtual Python environment
 * activate the vitual Python environment
