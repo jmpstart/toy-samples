@@ -2,17 +2,17 @@
 
 # Toy Samples
 
-Let us experience a rapid setup process of play ground `toy-samples` with minimal user interaction using `vamos` (a `playground manager`). 
+Let us experience a rapid setup process for play ground `toy-samples` with minimal user interaction using `vamos` (a `playground manager`). 
 
 
 ## Step 1
 
+This step is only required if `vamos` is not yet installed and can otherwise be omitted.
 In a ´BASH´ shell with `git` and `python3` installed run the following `curl` command: 
 
 ```
    $ curl https://raw.githubusercontent.com/jmpstart/vamos/main/install >~vamos; source ~vamos -s
 ```
-
 
 ## Step 2
 
