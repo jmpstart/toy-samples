@@ -26,7 +26,7 @@ With `vamos` installed, choose a convenient working directory for creation of a 
     (venv) $
 ```
 
-If the installation was successful you will get a success message and a hint, that a command ? has been provided for quick help regarding the playground.
+If the installation was successful you will get a success message and a hint, that a command `?` has been provided for quick help regarding the playground.
 
 Also note the character sequence `(venv)` as part of the command line prompt, which indicates, that the virtual environment of the playground is activated. If for any reason (e.g., open a new console/terminal window) `cd` to the playground's home folder (`toy-samples`) and invoke `$ . vamos` to re-activate the playground.
 
