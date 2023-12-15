@@ -55,10 +55,6 @@ if [ "$1" == "-i" ]; then
         exit 0
     fi
 
-        # install python packages
-
-    pip install matplotlib
-
         # copy utilities
 
     bash .vamos/bin/startup -i ec
@@ -73,26 +69,6 @@ fi
 
 if [ "$*" == "" ]; then
     if [ ! -d venv ]; then
-        deactivate 2>/dev/null
-
-        printf "\x1b[36m"  # cyan
-        echo 'creating virtual environment ...'
-
-        printf "\x1b[33m"  # yellow
-        echo 'python3 -m venv venv'
-        printf "\x1b[0m"   # neutral
-        python3 -m venv venv
-
-        printf "\x1b[33m"  # yellow
-        echo 'venv/bin/activate'
-        printf "\x1b[0m"   # neutral
-        venv/bin/activate
-
-        printf "\x1b[33m"  # yellow
-        echo 'pip install --upgrade pip'
-        printf "\x1b[0m"   # neutral
-        pip install --upgrade pip
-
         printf "\x1b[33m"  # yellow
         echo 'pip install numpy'
         printf "\x1b[0m"   # neutral
