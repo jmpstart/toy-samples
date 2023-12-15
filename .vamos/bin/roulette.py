@@ -1,4 +1,3 @@
-#!python3
 """
 roulette: simple Python script to print random numbers 0 <= n <= 36
 """

@@ -33,6 +33,7 @@ fi
 
 if [ "$*" == "-a" ]; then
   alias ?="bash `pwd`/venv/bin/help"
+  alias roulette="python `pwd`/venv/bin/roulette.py"
 fi
 
 #===============================================================================
@@ -57,13 +58,13 @@ if [ "$1" == "-i" ]; then
         # install python packages
 
     pip install matplotlib
-    
+
         # copy utilities
 
     bash .vamos/bin/startup -i ec
     bash .vamos/bin/startup -i gil
     bash .vamos/bin/startup -i help
-    bash .vamos/bin/startup -i roulette
+    bash .vamos/bin/startup -i roulette.py
 fi
 
 #===============================================================================
@@ -84,6 +85,11 @@ if [ "$*" == "" ]; then
         echo 'pip install --upgrade pip'
         printf "\x1b[0m"   # neutral
         pip install --upgrade pip
+
+        printf "\x1b[33m"  # yellow
+        echo 'pip install numpy'
+        printf "\x1b[0m"   # neutral
+        pip install numpy
 
         printf "\x1b[33m"  # yellow
         echo 'bash .vamos/bin/startup -i'
