@@ -18,7 +18,7 @@ if [ "$*" == "-?" ] || [ "$*" == "--help" ]; then
     echo "       source startup -?         # print usage/help info"
     echo "       source startup --help     # print usage/help info"
     echo "       source startup -a         # setup aliases"
-    echo "       source startup -u         # install untilities in venv folder"
+    echo "       source startup -i         # install untilities in venv folder"
     echo ""
     echo "setting up a playground:"
     echo "- create virtual Python environment if not exists"
@@ -32,18 +32,14 @@ fi
 #===============================================================================
 
 if [ "$*" == "-a" ]; then
-  alias de=deactivate
-  alias ve="source `pwd`/venv/bin/activate"
-  alias ?="bash `pwd`/.vamos/bin/help"
-  alias primes='echo 2 3 5 7 11 13 17 ...'
-  alias lol='echo hahaha hahaha hahahhaha'
+  alias ?="bash `pwd`/venv/bin/help"
 fi
 
 #===============================================================================
 # install utilities
 #===============================================================================
 
-if [ "$1" == "-u" ]; then
+if [ "$1" == "-i" ]; then
     if [ ! -d venv/bin ]; then
         printf $"\x1b[31m"
         echo 'error: cannot find .vamos/bin/startup script'
@@ -58,11 +54,16 @@ if [ "$1" == "-u" ]; then
         exit 0
     fi
 
+        # install python packages
+
+    pip install matplotlib
+    
         # copy utilities
 
-    bash .vamos/bin/startup -u lol
-    bash .vamos/bin/startup -u primes
-    bash .vamos/bin/startup -u fibo
+    bash .vamos/bin/startup -i ec
+    bash .vamos/bin/startup -i gil
+    bash .vamos/bin/startup -i help
+    bash .vamos/bin/startup -i roulette
 fi
 
 #===============================================================================
@@ -85,9 +86,9 @@ if [ "$*" == "" ]; then
         pip install --upgrade pip
 
         printf "\x1b[33m"  # yellow
-        echo 'bash .vamos/bin/startup -u'
+        echo 'bash .vamos/bin/startup -i'
         printf "\x1b[0m"   # neutral
-        bash .vamos/bin/startup -u
+        bash .vamos/bin/startup -i
     fi
 
         # activate virtual Python environment
