@@ -1,5 +1,5 @@
 #!/bin/bash
-# hlp: local help
+# hlp: local help 
 
   ec -g 'Utilities, coming with playground toy-samples'
   echo  '  ec            # echo colored text'
