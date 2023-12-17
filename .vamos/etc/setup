@@ -3,8 +3,8 @@
 pip install numpy   # install Python package
 vamos -i            # install vamos stuff
 
-alias casino="python `vamos -p`/bin/casino.py"
-alias ?="bash `vamos -p`/bin/help"
+alias casino="python "`vamos -p`"/bin/casino.py"
+alias ?="bash "`vamos -p`"/bin/help"
 
 vamos -@G 'playground @vdir setup complete!'
 vamos -@G 'type ? for quick help'
