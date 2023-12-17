@@ -5,7 +5,6 @@ vamos -i            # install vamos stuff
 
 alias casino="python "`vamos -p`"/bin/casino.py"
 alias ?="bash "`vamos -p`"/bin/help"
-alias wd="source vamos -w"
 
 vamos -@G 'playground @vdir setup complete!'
 vamos -@G 'type ? for quick help'
