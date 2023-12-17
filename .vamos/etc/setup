@@ -38,5 +38,5 @@ alias ?="bash "`vamos -e`"/bin/help"
 # step 6: print summary with quick help info
 #===============================================================================
 
-vamos -@G 'playground @vdir setup complete!'
+vamos -@G 'playground @toy setup complete!'
 vamos -@G 'type ? for quick help'
