@@ -3,6 +3,7 @@
 
   ec -g 'Utilities, coming with playground toy-samples'
   echo  '  ec            # echo colored text'
+  echo  '  wd            # change working directory'
   echo  '  gil           # log goit commit history'
   echo  '  casino        # print random roulette numbers'
   ec -g 'try these commands with -? or --help option to get additional help'

@@ -1,14 +1,14 @@
-![Vamos](./.vamos/image/toy-samples.jpg)
+![Vamos](./.vamos/toy-samples.jpg)
 
 # Toy Samples
 
-Let us experience a rapid setup process for play ground `toy-samples` with minimal user interaction using `vamos` (a `playground manager`). 
+Let us experience a rapid setup process for play ground `toy-samples` with minimal user interaction using `vamos` (a `playground manager`).
 
 
 ## Step 1
 
 This step is only required if `vamos` is not yet installed and can otherwise be omitted.
-In a `BASH` shell with `git` and `python3` installed run the following `curl` command: 
+In a `BASH` shell with `git` and `python3` installed run the following `curl` command:
 
 ```
    $ curl https://raw.githubusercontent.com/jmpstart/vamos/main/install >~vamos; source ~vamos -s
@@ -61,7 +61,7 @@ autonomous setup of an environment (see appendix). Such environment provides BAS
 
 ## Scan
 
-`scan` is a tiny Python program which prints a list of advertising Bluetooth Low Energy devices in the vicinity. It requires a BASH shell having access to the `Bluez` Bluetooth stack in connection with Bluetooth hardware. 
+`scan` is a tiny Python program which prints a list of advertising Bluetooth Low Energy devices in the vicinity. It requires a BASH shell having access to the `Bluez` Bluetooth stack in connection with Bluetooth hardware.
 
 
 ## LoL
@@ -73,7 +73,7 @@ autonomous setup of an environment (see appendix). Such environment provides BAS
     Laugh out loud: hahaha, haha, hahahaha
 ```
 
- 
+
 ## Appendix: Vamos Installation Process
 
 Invoking command
@@ -88,7 +88,7 @@ runs a two-phase `vamos` installation process. In phase 1 the following three st
 * subsequently the working directory is changed to this folder
 * and startup script ./.vamos/bin/startup is `sourced` (executed in current BASH environment)
 
-In phase 2 the specific startup script of 
+In phase 2 the specific startup script of
 playground `toy-samples` (located in `.vamos/bin/startup`) is executed:
 
 * create a `venv` folder representing a virtual Python environment
@@ -97,5 +97,3 @@ playground `toy-samples` (located in `.vamos/bin/startup`) is executed:
 * install another Python package
 * copy of some BASH scripts (our `toy samples`) from .vamos/bin into venv/bin
 * provide a quick help command to be invoked by `$ ?`
-
-
