@@ -5,7 +5,7 @@
 Let us experience a rapid setup process for play ground `toy-samples` with minimal user interaction using `vamos` (a `playground manager`).
 
 
-## Step 1
+## Step 1: Install Vamos
 
 This step is only required if `vamos` is not yet installed and can otherwise be omitted.
 In a `BASH` shell with `git` and `python3` installed run the following `curl` forula:
@@ -14,7 +14,7 @@ In a `BASH` shell with `git` and `python3` installed run the following `curl` fo
   curl https://raw.githubusercontent.com/jmpstart/vamos/main/install >~vamos; source ~vamos -s
 ```
 
-## Step 2
+## Step 2: Clone and Setup Playground
 
 With `vamos` installed, choose a convenient working directory for creation of a git repository folder `toy-samples` by invoking:
 
