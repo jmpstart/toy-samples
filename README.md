@@ -8,10 +8,10 @@ Let us experience a rapid setup process for play ground `toy-samples` with minim
 ## Step 1
 
 This step is only required if `vamos` is not yet installed and can otherwise be omitted.
-In a `BASH` shell with `git` and `python3` installed run the following `curl` command:
+In a `BASH` shell with `git` and `python3` installed run the following `curl` forula:
 
 ```
-   $ curl https://raw.githubusercontent.com/jmpstart/vamos/main/install >~vamos; source ~vamos -s
+  curl https://raw.githubusercontent.com/jmpstart/vamos/main/install >~vamos; source ~vamos -s
 ```
 
 ## Step 2
