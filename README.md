@@ -26,9 +26,9 @@ folder `toy-samples` by invoking:
 ```
     $ vamos @jmpstart/toy-samples
     ...
-    succesful installation of playground `toy-samples`
+    playground @toy setup complete!
     type ? for quick help
-    (venv) $
+    (@toy) $
 ```
 
 If the installation was successful you will get a success message and a hint,
