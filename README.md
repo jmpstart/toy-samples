@@ -2,8 +2,10 @@
 
 # Toy Samples
 
-Let us experience a rapid setup process for play ground `toy-samples` with minimal user interaction using `vamos` (a `playground manager`).
+Let us experience a rapid setup process for play ground `toy-samples` with minimal user
+interaction using `vamos` (a `playground manager`).
 
+-----------------------------------------------------------------------------------------------
 
 ## Step 1: Install Vamos
 
@@ -13,10 +15,13 @@ In a `BASH` shell with `git` and `python3` installed run the following `curl` fo
 ```
   curl https://raw.githubusercontent.com/jmpstart/vamos/main/install >~vamos; source ~vamos -s
 ```
+-----------------------------------------------------------------------------------------------
+
 
 ## Step 2: Clone and Setup Playground
 
-With `vamos` installed, choose a convenient working directory for creation of a git repository folder `toy-samples` by invoking:
+With `vamos` installed, choose a convenient working directory for creation of a git repository
+folder `toy-samples` by invoking:
 
 ```
     $ vamos @jpmstart/toy-samples
@@ -26,28 +31,38 @@ With `vamos` installed, choose a convenient working directory for creation of a 
     (venv) $
 ```
 
-If the installation was successful you will get a success message and a hint, that a command `?` has been provided for quick help regarding the playground.
+If the installation was successful you will get a success message and a hint,
+that a command `?` has been provided for quick help regarding the playground.
 
-Also note the character sequence `(venv)` as part of the command line prompt, which indicates, that the virtual environment of the playground is activated. If for any reason (e.g., open a new console/terminal window) `cd` to the playground's home folder (`toy-samples`) and invoke `$ . vamos` to re-activate the playground.
+Also note the character sequence `(venv)` as part of the command line prompt, which indicates
+that the virtual environment of the playground is activated. 
+If for any reason (e.g., open a new console/terminal window) `cd` to the playground's home
+folder (`toy-samples`) and invoke `$ . vamos` to re-activate the playground.
 
 
-## Exploring the Playground
+-----------------------------------------------------------------------------------------------
+
+# Exploring the Playground
 
 Get quick help by hitting the `?` command:
 
 ```
     (venv) $ ?
     playground toy-samples: try the following commands:
-        roulette      # a python program using NumPy package
-        scan          # a python BLE scanner using Bleak package
+        casino        # a python program using NumPy package
+        wd            # change working directory and activate related playground
         lol           # a BASH script outputing colored text
     (venv) $
 ```
 
-The toy samples by themselves are not very impressive. The focus here is more on the `rapid installation process` of a playground from a github repository with
-autonomous setup of an environment (see appendix). Such environment provides BASH executable programs/utilities based on Python or Bash scripts (but not only restricted to), which are related to a virtual environment, i.e., are only inactive in the context of an activated virtual Python environment.
+The toy samples by themselves are not very impressive. The focus here is more on the
+`rapid installation process` of a playground from a github repository with autonomous setup of
+an environment (see appendix). Such environment provides BASH executable programs/utilities 
+based on Python or Bash scripts (but not only restricted to), which are related to a virtual
+environment, i.e., are only inactive in the context of an activated virtual Python environment.
 
-## Roulette
+
+## Casino
 
 ```
     (venv) $ roulette
@@ -73,8 +88,9 @@ autonomous setup of an environment (see appendix). Such environment provides BAS
     Laugh out loud: hahaha, haha, hahahaha
 ```
 
+-----------------------------------------------------------------------------------------------
 
-## Appendix: Vamos Installation Process
+# Appendix: Vamos Installation Process
 
 Invoking command
 
