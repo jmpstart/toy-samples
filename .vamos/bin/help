@@ -2,8 +2,8 @@
 # hlp: local help
 
   ec -g 'Utilities, coming with playground toy-samples'
-  echo  '  ec            # echo colored text'
-  echo  '  wd            # change working directory'
-  echo  '  gil           # log git commit history'
   echo  '  casino        # print random roulette numbers'
+  echo  '  ecco          # echo colored text'
+  echo  '  gil           # log git commit history'
+  echo  '  wd            # change working directory'
   ec -g 'try these commands with -? or --help option to get additional help'
