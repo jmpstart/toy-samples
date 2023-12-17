@@ -24,7 +24,7 @@ With `vamos` installed, choose a convenient working directory for creation of a 
 folder `toy-samples` by invoking:
 
 ```
-    $ vamos @jmpstart/toy-samples   # clone https://github.com/jmpstart/vamos.git & setup
+    $ vamos @jmpstart/toy-samples
     ...
     succesful installation of playground `toy-samples`
     type ? for quick help
