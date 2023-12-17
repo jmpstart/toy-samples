@@ -4,6 +4,5 @@
   ec -g 'Utilities, coming with playground toy-samples'
   echo  '  ec            # echo colored text'
   echo  '  gil           # log goit commit history'
-  echo  '  roulette      # print random roulette numbers'
-  echo  ''
+  echo  '  casino        # print random roulette numbers'
   ec -g 'try these commands with -? or --help option to get additional help'
