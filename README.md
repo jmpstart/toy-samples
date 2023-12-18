@@ -20,22 +20,27 @@ In a `BASH` shell with `git` and `python3` installed run the following `curl` fo
 
 ## Step 2: Clone and Setup Playground
 
-With `vamos` installed, choose a convenient working directory for creation of a git repository
-folder `toy-samples` by invoking:
+With `vamos` installed, choose a convenient working directory for creation of a
+git repository folder `toy-samples` by invoking:
 
 ```
     $ vamos @jmpstart/toy-samples
+```
+
+This causes `vamos` to clone repository https://github.com/jmpstart/toy-samples
+and setup a playground (toy-samples) managed by a virtual Python environment
+`@toy`. In case of a successful you get a success message and a hint,
+that command `?` has been provided for quick help regarding the playground.
+
+```
     ...
     playground @toy setup complete!
     type ? for quick help
     (@toy) $
 ```
 
-If the installation was successful you will get a success message and a hint,
-that a command `?` has been provided for quick help regarding the playground.
-
-Also note the character sequence `(venv)` as part of the command line prompt, which indicates
-that the virtual environment of the playground is activated. 
+Also note the character sequence `(@toy)` as part of the command line prompt, which indicates
+that the virtual environment of the playground is activated.
 If for any reason (e.g., open a new console/terminal window) `cd` to the playground's home
 folder (`toy-samples`) and invoke `$ . vamos` to re-activate the playground.
 
@@ -57,7 +62,7 @@ Get quick help by hitting the `?` command:
 
 The toy samples by themselves are not very impressive. The focus here is more on the
 `rapid installation process` of a playground from a github repository with autonomous setup of
-an environment (see appendix). Such environment provides BASH executable programs/utilities 
+an environment (see appendix). Such environment provides BASH executable programs/utilities
 based on Python or Bash scripts (but not only restricted to), which are related to a virtual
 environment, i.e., are only inactive in the context of an activated virtual Python environment.
 
