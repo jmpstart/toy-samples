@@ -16,10 +16,25 @@ def random():
     else:
         print("black:",number)
 
-if __name__ == '__main__':
-    if len(sys.argv) == 0:
+def main():
+    if len(sys.argv) <= 1:
         random()
-    else:
+    elif sys.argv[1] == '-?' or sys.argv[1] == '--help':
         print('usage: casino         # get random number (0 <= n <= 36)')
+        print('       casino <n>     # n times get random number')
         print('       casino -?      # show help')
         print('       casino --help  # show help')
+    else:
+        try:
+            n = int(sys.argv[1])
+        except:
+            n = -1
+
+        if (n <= 0):
+            print('bad input (=> casino -?)')
+        else:
+            for i in range(n):
+                random()
+
+if __name__ == '__main__':
+    main()
