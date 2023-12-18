@@ -2,7 +2,7 @@
 
 # Toy Samples
 
-Let us experience a rapid setup process for play ground `toy-samples` with minimal user
+Let us experience a rapid setup process for playground `toy-samples` with minimal user
 interaction using `vamos` (a `playground manager`).
 
 --------------------------------------------------------------------------------
