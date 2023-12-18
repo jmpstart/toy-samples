@@ -29,7 +29,7 @@ git repository folder `toy-samples` by invoking:
 
 This causes `vamos` to clone repository https://github.com/jmpstart/toy-samples
 and setup a playground (toy-samples) managed by a virtual Python environment
-`@toy`. In case of a successful you get a success message and a hint,
+`@toy`. In case of a success message you also get a hint
 that command `?` has been provided for quick help regarding the playground.
 
 ```
