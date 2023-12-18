@@ -62,7 +62,7 @@ Get quick help by hitting the `?` command:
     (@toy) $
 ```
 
-## Ecco - ECho COlored text
+## Ecco - Echo Colored text
 
 ```
     (@toy) $ ecco -?
