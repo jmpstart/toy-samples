@@ -36,7 +36,13 @@ alias casino="python "`vamos -p`"/bin/casino.py"
 alias ?="bash "`vamos -p`"/bin/help"
 
 #===============================================================================
-# step 6: print summary with quick help info
+# step 6: setup an alias which changes the prompt
+#===============================================================================
+
+alias prompt="source  `which vamos` --prompt; source `which vamos` -a"
+
+#===============================================================================
+# step 7: print summary with quick help info
 #===============================================================================
 
 vamos -@G 'playground @toy setup complete!'

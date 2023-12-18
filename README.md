@@ -44,56 +44,83 @@ that the virtual environment of the playground is activated.
 If for any reason (e.g., open a new console/terminal window) `cd` to the playground's home
 folder (`toy-samples`) and invoke `$ . vamos` to re-activate the playground.
 
-
------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 
 # Exploring the Playground
 
 Get quick help by hitting the `?` command:
 
 ```
-    (venv) $ ?
-    playground toy-samples: try the following commands:
-        casino        # a python program using NumPy package
-        wd            # change working directory and activate related playground
-        lol           # a BASH script outputing colored text
-    (venv) $
+    (@toy) $ ?
+    Utilities, coming with playground @toy (toy-samples)
+      ecco          # echo colored text
+      gil           # log git commit history
+      wd            # change working directory
+      casino        # print random roulette numbers
+      prompt        # change prompt to recommended one
+    try these commands with -? or --help option to get additional help
+    (@toy) $
 ```
 
-The toy samples by themselves are not very impressive. The focus here is more on the
-`rapid installation process` of a playground from a github repository with autonomous setup of
-an environment (see appendix). Such environment provides BASH executable programs/utilities
-based on Python or Bash scripts (but not only restricted to), which are related to a virtual
-environment, i.e., are only inactive in the context of an activated virtual Python environment.
-
-
-## Casino
+## Ecco - ECho COlored text
 
 ```
-    (venv) $ roulette
-    17
-    (venv) $ roulette
-    3
-    (venv) $ roulette
-    35
+    (@toy) $ ecco -?
+    usage: ecco ...     # (uncolored) echo ...
+           ecco -r ...  # (red)
+           ecco -g ...  # (green)
+           ecco -y ...  # (yellow)
+           ecco -b ...  # (blue)
+           ecco -m ...  # (magenta)
+           ecco -c ...  # (cyan)
+           ecco -n ...  # (no color)    
+    (@toy) $ ecco -g 'the opperation was successful!'
+    the opperation was successful!
+```
+
+
+## Gil - Git Log in Tree Form
+
+```
+    (@toy) $ gil
+    * c074d89 (HEAD -> main, origin/main, origin/HEAD) ...
     ...
 ```
 
-## Scan
 
-`scan` is a tiny Python program which prints a list of advertising Bluetooth Low Energy devices in the vicinity. It requires a BASH shell having access to the `Bluez` Bluetooth stack in connection with Bluetooth hardware.
-
-
-## LoL
-
-'lol` is a BASH script demonstrating the use of colors
+## Wd - Change Working Directory
 
 ```
-    (venv) $ lol
-    Laugh out loud: hahaha, haha, hahahaha
+    (@toy) $ wd -?
+    usage: wd ...       # change working directory / virtual environment
+           wd <path>    # change current dir, occasionally switch venv
+           wd .         # store working directory in WORKDIR
+           wd           # change to $WORKDIR
+           wd -?        # help
+           wd --help    # help
+
+           activate new virtual environment if such is found in current
+           directory or in parent directory hierarchy.```
 ```
 
------------------------------------------------------------------------------------------------
+## Casino - Generate Random Numbers
+
+```
+    (@toy) $ casino -?
+    usage: casino         # get random number (0 <= n <= 36)
+           casino <n>     # n times get random number
+           casino -?      # show help
+           casino --help  # show help
+```
+
+## Prompt - Set Standard Prompt
+
+```
+(@toy) ... $ prompt
+(@toy) toy-samples $
+```
+
+--------------------------------------------------------------------------------
 
 # Appendix: Vamos Installation Process
 
