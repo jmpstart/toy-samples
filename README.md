@@ -13,7 +13,7 @@ This step is only required if `vamos` is not yet installed and can otherwise be 
 In a `BASH` shell with `curl` installed run the following `curl` formula:
 
 ```
-  curl https://raw.githubusercontent.com/jmpstart/vamos/main/install >~vamos; source ~vamos -s
+  curl https://raw.githubusercontent.com/jmpstart/vamos/main/install >~vamos; . ~vamos -!
 ```
 
 In the following you need `git` installed and `python3` ready for working with
