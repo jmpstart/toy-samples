@@ -24,7 +24,7 @@ With `vamos` installed, choose a convenient working directory for creation of a
 git repository folder `toy-samples` by invoking:
 
 ```
-    $ vamos @jmpstart/toy-samples
+    vamos @jmpstart/toy-samples
 ```
 
 This causes `vamos` to clone repository https://github.com/jmpstart/toy-samples
