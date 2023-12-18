@@ -10,12 +10,14 @@ interaction using `vamos` (a `playground manager`).
 ## Step 1: Install Vamos
 
 This step is only required if `vamos` is not yet installed and can otherwise be omitted.
-In a `BASH` shell with `git` and `python3` installed run the following `curl` formula:
+In a `BASH` shell with `curl` installed run the following `curl` formula:
 
 ```
   curl https://raw.githubusercontent.com/jmpstart/vamos/main/install >~vamos; source ~vamos -s
 ```
-In case of troubles consult https://github.com/jmpstart/vamos/blob/main/README.md.
+
+In the following you need `git` installed and `python3` ready for working with
+virtual environments. If this is not the case consult https://github.com/jmpstart/vamos/blob/main/README.md.
 
 --------------------------------------------------------------------------------
 
