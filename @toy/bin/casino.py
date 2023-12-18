@@ -17,9 +17,11 @@ def random():
         print("black:",number)
 
 if __name__ == '__main__':
-    if len(sys.argv) == 0:
-        random()
-    else:
+    print('args:',sys.argv)
+    if len(sys.argv) > 1:
         print('usage: casino         # get random number (0 <= n <= 36)')
         print('       casino -?      # show help')
         print('       casino --help  # show help')
+
+    else:
+        random()
