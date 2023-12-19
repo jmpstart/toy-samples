@@ -1,9 +1,21 @@
 #!/bin/bash
 # hlp: local help
 
-  ec -g 'Utilities, coming with playground @toy (toy-samples)'
+  RED='\x1b[31m'
+  GREEN='\x1b[32m'
+  YELLOW='\x1b[33m'
+  BLUE='\x1b[34m'
+  MAGENTA='\x1b[35m'
+  CYAN='\x1b[36m'
+  NORMAL='\x1b[0m'
+
+  printf $GREEN
+  echo 'Utilities, coming with playground @toy (toy-samples)'
+  printf $NORMAL
   echo  '  ecco          # echo colored text'
   echo  '  gil           # log git commit history'
   echo  '  wd            # change working directory'
   echo  '  casino        # print random roulette numbers'
-  ec -g 'try these commands with -? or --help option to get additional help'
+  printf $GREEN
+  echo 'try these commands with -? or --help option to get additional help'
+  printf $NORMAL
